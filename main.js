@@ -32,22 +32,22 @@ async function createAccordionData(){
 
 createAccordionData();
 
-const getAccordianTitles = document.querySelectorAll(".accordion-title")
+// const getAccordianTitles = document.querySelectorAll(".accordion-title")
 
-getAccordianTitles.forEach(currentItem => {
-    currentItem.addEventListener('click', (e)=>{
-        if(currentItem.classList.contains('active')){
-            currentItem.classList.remove('active')
-        }
-        else{
-            currentItem.classList.add( 'active' );
-        }
-    })
-})
+// getAccordianTitles.forEach(currentItem => {
+//     currentItem.addEventListener('click', (e)=>{
+//         if(currentItem.classList.contains('active')){
+//             currentItem.classList.remove('active')
+//         }
+//         else{
+//             currentItem.classList.add( 'active' );
+//         }
+//     })
+// })
 
-// document.addEventListener('click', function (event) {
-//     const accordionTitle = event.target.closest('.accordion-title');
-//     if (accordionTitle) {
-//         accordionTitle.classList.toggle('active');
-//     }
-// });
+document.addEventListener('click', function (event) {
+    const accordionTitle = event.target.closest('.accordion-title');
+    if (accordionTitle) {
+        accordionTitle.classList.toggle('active');
+    }
+});
