@@ -1,0 +1,38 @@
+/* Style for accordion container */
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style for accordion items */
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for accordion titles */
+.accordion-title {
+    padding: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for active accordion titles */
+.accordion-title.active {
+    background-color: #ddd;
+}
+
+/* Style for accordion content */
+.accordion-answer {
+    padding: 10px;
+    display: none;
+}
+
+/* Style for active accordion content */
+.accordion-title.active + .accordion-answer {
+    display: block;
+}

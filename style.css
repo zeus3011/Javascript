@@ -1,7 +1,0 @@
-.accordion-answer{
-    display:none;
-}
-
-.accordion-title.active + .accordion-answer{
-    display: block
-}
